@@ -1,7 +1,7 @@
-local Highlight = require("gruber-darker.highlight")
-local c = require("gruber-darker.palette")
-local vim_hl = require("gruber-darker.highlights.vim").highlights
-local gruber_hl = require("gruber-darker.highlights.colorscheme").highlights
+local Highlight = require("gruber-even-darker.highlight")
+local c = require("gruber-even-darker.palette")
+local vim_hl = require("gruber-even-darker.highlights.vim").highlights
+local gruber_hl = require("gruber-even-darker.highlights.colorscheme").highlights
 
 ---@type HighlightsProvider
 local M = {

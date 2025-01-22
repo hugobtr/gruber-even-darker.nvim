@@ -6,13 +6,13 @@ local M = {}
 
 ---@type HighlightsProvider[]
 local providers = {
-	require("gruber-darker.highlights.colorscheme"),
-	require("gruber-darker.highlights.lsp"),
-	require("gruber-darker.highlights.vim"),
-	require("gruber-darker.highlights.terminal"),
-	require("gruber-darker.highlights.treesitter"),
-	require("gruber-darker.highlights.cmp"),
-	require("gruber-darker.highlights.telescope"),
+	require("gruber-even-darker.highlights.colorscheme"),
+	require("gruber-even-darker.highlights.lsp"),
+	require("gruber-even-darker.highlights.vim"),
+	require("gruber-even-darker.highlights.terminal"),
+	require("gruber-even-darker.highlights.treesitter"),
+	require("gruber-even-darker.highlights.cmp"),
+	require("gruber-even-darker.highlights.telescope"),
 }
 
 ---Set highlights for configured providers

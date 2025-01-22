@@ -1,4 +1,4 @@
-local c = require("gruber-darker.palette")
+local c = require("gruber-even-darker.palette")
 
 ---@type HighlightsProvider
 local M = {}
@@ -6,7 +6,7 @@ local M = {}
 ---Set Neovim terminal colors
 function M.setup()
 	-- terminal colors adapted from
-	-- https://github.com/drsooch/gruber-darker-vim/blob/master/colors/GruberDarker.vim#L202
+	-- https://github.com/drsooch/gruber-even-darker-vim/blob/master/colors/GruberDarker.vim#L202
 	vim.g.terminal_color_0 = c["bg+1"]:to_string()
 	vim.g.terminal_color_8 = c["bg+1"]:to_string()
 

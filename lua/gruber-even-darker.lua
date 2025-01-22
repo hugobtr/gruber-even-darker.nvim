@@ -1,4 +1,4 @@
-local config = require("gruber-darker.config")
+local config = require("gruber-even-darker.config")
 
 local M = {}
 
@@ -6,22 +6,22 @@ local M = {}
 ---theme changes to something else
 ---@package
 function M.on_colorscheme()
-	vim.cmd([[autocmd! GruberDarker]])
-	vim.cmd([[augroup! GruberDarker]])
+	vim.cmd([[autocmd! GruberEvenDarker]])
+	vim.cmd([[augroup! GruberEvenDarker]])
 end
 
 local function create_autocmds()
-	local gruber_darker_group = vim.api.nvim_create_augroup("GruberDarker", { clear = true })
+	local gruber_even_darker_group = vim.api.nvim_create_augroup("GruberEvenDarker", { clear = true })
 	vim.api.nvim_create_autocmd("ColorSchemePre", {
-		group = gruber_darker_group,
+		group = gruber_even_darker_group,
 		pattern = "*",
 		callback = function()
-			require("gruber-darker").on_colorscheme()
+			require("gruber-even-darker").on_colorscheme()
 		end,
 	})
 
 	vim.api.nvim_create_autocmd("FileType", {
-		group = gruber_darker_group,
+		group = gruber_even_darker_group,
 		pattern = "qf,help",
 		callback = function()
 			vim.cmd.setlocal("winhighlight=Normal:NormalSB,SignColumn:SignColumnSB")
@@ -33,7 +33,7 @@ local function create_autocmds()
   -- TODO: link these to relevant treesitter groups in the future.
   -- See :h lsp-semantic-highlight
 	vim.api.nvim_create_autocmd("ColorScheme", {
-		group = gruber_darker_group,
+		group = gruber_even_darker_group,
 		pattern = "*",
 		callback = function()
 			-- Hide all semantic highlights
@@ -46,14 +46,14 @@ end
 
 ---Clear current highlights and set Neovim global `colors_name`
 function M.load()
-	local highlights = require("gruber-darker.highlights")
+	local highlights = require("gruber-even-darker.highlights")
 
 	if vim.g.colors_name then
 		vim.cmd.hi("clear")
 	end
 
 	vim.opt.termguicolors = true
-	vim.g.colors_name = "gruber-darker"
+	vim.g.colors_name = "gruber-even-darker"
 
 	highlights.setup()
 

@@ -1,4 +1,4 @@
-local Color = require("gruber-darker.color")
+local Color = require("gruber-even-darker.color")
 local M = {}
 
 ---@type table<string, Color>
@@ -10,10 +10,17 @@ M = {
 	white = Color.new(0xffffff),
 	black = Color.new(0x000000),
 	["bg-1"] = Color.new(0x101010),
-	bg = Color.new(0x181818),
-	["bg+1"] = Color.new(0x282828),
-	["bg+2"] = Color.new(0x453d41),
-	["bg+3"] = Color.new(0x484848),
+	-- Original background color
+	--bg = Color.new(0x181818), 
+	bg = Color.new(0x000000),
+	--["bg+1"] = Color.new(0x282828),
+	--["bg+2"] = Color.new(0x453d41),
+	--["bg+3"] = Color.new(0x484848),
+	--["bg+4"] = Color.new(0x52494e),
+	--["red-1"] = Color.new(0xc73c3f),
+	["bg+1"] = Color.new(0x000000),
+	["bg+2"] = Color.new(0x282828),
+	["bg+3"] = Color.new(0x000000),
 	["bg+4"] = Color.new(0x52494e),
 	["red-1"] = Color.new(0xc73c3f),
 	red = Color.new(0xf43841),
