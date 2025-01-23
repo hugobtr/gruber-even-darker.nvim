@@ -12,6 +12,7 @@ return {
     c = { fg = colors.fg, bg = colors.bg },
   },
   insert = { a = { fg = colors.bg, bg = colors.green, gui = "bold" } },
+  terminal = { a = { fg = colors.bg, bg = colors.green, gui = "bold" } },
   visual = { a = { fg = colors.bg, bg = colors.yellow, gui = "bold" } },
   command = { a = { fg = colors.bg, bg = colors.fg, gui = "bold" } },
   replace = { a = { fg = colors.fg, bg = colors.bg, gui = "bold" } },
